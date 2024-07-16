@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+body {
+    padding: 0;
+    margin: 0 ;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    height: 100vh;
+
+}
+.body-container {
+    text-align: center; 
+    margin: 0 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+   
+}
+.img-header {
+    display: inline-block; 
+    margin:1% auto;
+   align-self: center;
+    
+}
+.img-header img {
+    max-width: 80%;
+    height: auto;
+}
+.img-header h2 {
+font-family: Arial, sans-serif; /* Example font */
+font-size: 24px; /* Example font size */
+color: #15288e;
+margin-top: 10px; /* Example margin */
+animation: fadeInUp 1s ease forwards; /* Animation */
+opacity: 0; /* Initially hidden */
+font-size: larger;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Move up */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+/*......................................*/
+
+.survey-container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    text-align: right;
+    margin: 0 auto;
+    animation: fadeInDown 1s ease;
+}
+
+.survey-container #myForm div:first-of-type,
+.survey-container #myForm div:last-of-type {
+  direction: rtl; /* Force left-to-right direction */
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+label {
+    margin: 10px;
+    color: #4d4a4a;
+    font-size: 18px;
+    padding-right: 1%;
+
+}
+
+input[type="text"] {
+    padding: 12px;
+    margin-bottom: 1%;
+    width: 100%; /* Take up full width of parent container */
+    border: 2px solid #ffcc66; /* Light yellow border */
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+input[type="checkbox"] {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    
+    background-color: #ffcc66;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ff9933; /* Brighter yellow when focused */
+}
+
+.formSubmit button {
+    background-color: #ff951a; /* Fun pink button */
+    color: white;
+    border: none;
+    max-width: 30%;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formSubmit button:hover {
+    background-color: #b6660b; /* Darker pink on hover */
+}
+.formSubmit{
+    text-align: center;
+}
+h3{
+    color: #15288e;
+}
+ /*.......................................*/
+
+  
+  .retailer {
+    margin-bottom: 20px;
+    text-align: left;
+    
+  }
+  .retailer label {
+   color: #15288e;
+   display: inline block;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+ 
+  .column {
+    float: left;
+    width: 33.33%;
+    direction: ltr;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*.............................................................*/
+  .styled-textarea {
+    width: 100%;
+    max-width: 60%;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    resize: vertical; /* Allow vertical resizing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.styled-textarea:focus {
+    border-color: #b6660b;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+
+
+ #displayRetailerID {
+    margin: 1% auto;
+    display: block;
+    width:60%; /* Take up full width of parent container */
+    border: 2px solid #ffcc66; /* Light yellow border */
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+
+}
+.labelID{
+    margin-left: 20%;
+}
+

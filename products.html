@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartona Wishlist</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <section class="body-container">
+    <div class="header">
+        <div class="img-header">
+            <img src="Cartona_Logo_Horizontal_Blue_Latin.png" alt="Header Image">
+            <h2>Cartona Wishlist APP </h2>
+        </div>
+    </div>
+    <form method="post" action="https://script.google.com/macros/s/AKfycbztqJm2Dm1AdlaLRkl__dZAbRKHSVhZlXNzkFCzUXApIDfJQ-wpIWYbYc2wqzgEPRQ/exec">
+    <div class="body">
+        <div class="retailer">
+            <label  for="retailerID" class="labelID">Retailer ID:</label>
+             <textarea class="retailerID" id="displayRetailerID"name="retailerID" > </textarea>
+          </div>
+          <div>
+       <h3>المنتجات التي تم إختيارها</h3>
+       <textarea class="styled-textarea" id="displayProducts" name="wishlist">
+          
+       </textarea>
+       </div>
+       <div>
+        <h3>Comment</h3>
+        <textarea class="styled-textarea" name="comment" >
+           
+        </textarea>
+       </div>
+    </div>
+    <div class="formSubmit"  >
+        <button type="submit">Submit</button>
+      </div>
+
+    </form>
+</section>
+<script src="main.js"></script>
+ </body>
+ </html>
